@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         ],
         [
             'audio/Ding 1/Ding1babysurprise.mp3', 'audio/Ding 1/Ding1barbieworld.mp3', 'audio/Ding 1/Ding1beautiful.mp3',
-            'audio/Ding 1/Ding1dontworrythatitsnotgood.mp3', 'audio/Ding 1/Ding1dontyouworry.mp3', 'audio/Ding 1/Ding1ihopeyourehavingfun.mp3', 'audio/Ding 1/Ding1itssoeasyacaveman.mp3', 'Ding1marvellous.mp3',
+            'audio/Ding 1/Ding1dontworrythatitsnotgood.mp3', 'audio/Ding 1/Ding1dontyouworry.mp3', 'audio/Ding 1/Ding1ihopeyourehavingfun.mp3', 'audio/Ding 1/Ding1itssoeasyacaveman.mp3', 'audio/Ding 1/Ding1marvellous.mp3',
             'audio/Ding 1/Ding1supernaturaldelight.mp3', 'audio/Ding 1/Ding1whwnyougitajobtodo.mp3'
         ],
         [
