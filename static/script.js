@@ -22,22 +22,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const dingFolders = [
         [
             'audio/Ding 0/Ding0thehumanity.mp3', 'audio/Ding 0/Ding0thisisatoughthing.mp3', 'audio/Ding 0/Ding0youcantdothat.mp3',
-            'Ding0youcanthandlethetruth', 'Ding0yourenogood'
+            'Ding0youcanthandlethetruth.mp3', 'Ding0yourenogood.mp3'
         ],
         [
             'audio/Ding 1/Ding1babysurprise.mp3', 'audio/Ding 1/Ding1barbieworld.mp3', 'audio/Ding 1/Ding1beautiful.mp3',
-            'Ding1dontworrythatitsnotgood', 'Ding1dontyouworry', 'Ding1ihopeyourehavingfun', 'Ding1itssoeasyacaveman', 'Ding1marvellous',
-            'Ding1supernaturaldelight', 'Ding1whwnyougitajobtodo'
+            'Ding1dontworrythatitsnotgood.mp3', 'Ding1dontyouworry.mp3', 'Ding1ihopeyourehavingfun.mp3', 'Ding1itssoeasyacaveman.mp3', 'Ding1marvellous.mp3',
+            'Ding1supernaturaldelight.mp3', 'Ding1whwnyougitajobtodo.mp3'
         ],
         [
             'audio/Ding 2/Ding2aintyoucool.mp3', 'audio/Ding 2/Ding2cantgetenough.mp3', 'audio/Ding 2/Ding2celebrate.mp3',
-            'Ding2feelssogood', 'Ding2greatgodinheaven', 'Ding2hatisoff', 'Ding2iloveyou', 'Ding2ineverseensuch', 'Ding2itsmagic',
-            'Ding2thewonderofitall'
+            'Ding2feelssogood.mp3', 'Ding2greatgodinheaven.mp3', 'Ding2hatisoff.mp3', 'Ding2iloveyou.mp3', 'Ding2ineverseensuch.mp3', 'Ding2itsmagic.mp3',
+            'Ding2thewonderofitall.mp3'
         ],
         [
             'audio/Ding 3/Ding3itsamiracle.mp3', 'audio/Ding 3/Ding3loveyahoney.mp3', 'audio/Ding 3/Ding3nobodydoesitbetter.mp3',
-            'Ding3skyrockets', 'Ding3sogood', 'Ding3thatsawhatilike', 'Ding3thatsthewsyilikeit', 'Ding3theforce', 'Ding3theforce',
-            'Ding3youreasuperstar'
+            'Ding3skyrockets.mp3', 'Ding3sogood.mp3', 'Ding3thatsawhatilike.mp3', 'Ding3thatsthewsyilikeit.mp3', 'Ding3theforce.mp3', 'Ding3theforce.mp3',
+            'Ding3youreasuperstar.mp3'
         ]
     ];
 
