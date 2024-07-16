@@ -21,13 +21,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
             'audio/Ding 0/Ding0thehumanity.mp3', 'audio/Ding 0/Ding0thisisatoughthing.mp3', 'audio/Ding 0/Ding0youcantdothat.mp3'
         ],
         [
-            'audio/Ding 1/Ding1babysurprise.mp3', 'audio/Ding01/Ding1barbieworld.mp3', 'audio/Ding01/Ding1beautiful.mp3'
+            'audio/Ding 1/Ding1babysurprise.mp3', 'audio/Ding 1/Ding1barbieworld.mp3', 'audio/Ding 1/Ding1beautiful.mp3'
         ],
         [
-            'audio/Ding 2/Ding2aintyoucool.mp3', 'audio/Ding02/Ding2cantgetenough.mp3', 'audio/Ding02/Ding2celebrate.mp3'
+            'audio/Ding 2/Ding2aintyoucool.mp3', 'audio/Ding 2/Ding2cantgetenough.mp3', 'audio/Ding 2/Ding2celebrate.mp3'
         ],
         [
-            'audio/Ding 3/Ding3itsamiracle.mp3', 'audio/Ding03/Ding3loveyahoney.mp3', 'audio/Ding03/Ding3nobodydoesitbetter.mp3'
+            'audio/Ding 3/Ding3itsamiracle.mp3', 'audio/Ding 3/Ding3loveyahoney.mp3', 'audio/Ding 3/Ding3nobodydoesitbetter.mp3'
         ]
     ];
 
