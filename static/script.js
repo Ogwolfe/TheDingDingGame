@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     const dingFolders = [
         [
-            'audio/Ding 0/Ding0thehumanity.mp3', 'audio/Ding 0/Ding0thisisatoughthing.mp3', 'audio/Ding 0/Ding0youcantdothat.mp3',
+            'audio/Ding 0/Ding0mamamia.mp3', 'audio/Ding 0/Ding0thisisatoughthing.mp3', 'audio/Ding 0/Ding0youcantdothat.mp3',
             'audio/Ding 0/Ding0youcanthandlethetruth.mp3', 'audio/Ding 0/Ding0yourenogood.mp3'
         ],
         [
@@ -35,9 +35,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
             'audio/Ding 2/Ding2thewonderofitall.mp3'
         ],
         [
-            'audio/Ding 3/Ding3itsamiracle.mp3', 'audio/Ding 3/Ding3loveyahoney.mp3', 'audio/Ding 3/Ding3nobodydoesitbetter.mp3',
-            'audio/Ding 3/Ding3skyrockets.mp3', 'audio/Ding 3/Ding3sogood.mp3', 'audio/Ding 3/Ding3thatsawhatilike.mp3', 'audio/Ding 3/Ding3thatsthewsyilikeit.mp3', 'audio/Ding 3/Ding3theforce.mp3', 'audio/Ding 3/Ding3theforce.mp3',
-            'audio/Ding 3/Ding3youreasuperstar.mp3'
+            'audio/Ding 3/Ding3NEWgreatgod.mp3', 'audio/Ding 3/Ding3NEWnobodydoesit.mp3', 'audio/Ding 3/Ding3NEWsuperstar.mp3',
+            'audio/Ding 3/Ding3NEWtheforce.mp3', 'audio/Ding 3/Ding3NEWwhatilike.mp3'
         ]
     ];
 
