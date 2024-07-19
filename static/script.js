@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     enterButton.addEventListener('click', () => {
         blurOverlay.classList.add('hidden');
-        content.classList.add('visible');
+        
         document.body.style.overflow = 'auto'; // Enable scrolling
     });
 });
@@ -42,6 +42,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     const audioPlayer = document.getElementById('audioPlayer');
     const enterButton = document.getElementById('enter-button');
+    const toggleCheckbox = document.getElementById('toggle');
+
+    let isMusicMode = false;
 
     function getRandomElement(arr) {
         return arr[Math.floor(Math.random() * arr.length)];
@@ -55,7 +58,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         audioPlayer.play();
 
         setTimeout(() => {
-            playRandomDing();
+            if (toggleCheckbox.checked) {
+                playRandomMusic(); // In Music Mode, loop the same random music file
+            } else {
+                playRandomDing(); // In Ding Mode, play a ding sound
+            }
         }, randomTime * 1000);
     }
 
@@ -71,7 +78,36 @@ document.addEventListener('DOMContentLoaded', (event) => {
         };
     }
 
+    function playRandomMusic() {
+        const randomFile = getRandomElement(gamemusicFiles);
+        audioPlayer.src = randomFile;
+        audioPlayer.play();
+
+        audioPlayer.onended = () => {
+            if (isMusicMode) {
+                playRandomMusic(); // Continue looping in Music Mode
+            }
+        };
+    }
+
+    function startPlayback() {
+        if (isMusicMode) {
+            playRandomMusic(); // Start Music Mode
+        } else {
+            playRandomGamemusic(); // Start Ding Mode
+        }
+    }
+
     enterButton.addEventListener('click', () => {
-        playRandomGamemusic();
+        startPlayback();
+    });
+
+    toggleCheckbox.addEventListener('change', () => {
+        if (toggleCheckbox.checked) {
+            isMusicMode = true;
+        } else {
+            isMusicMode = false;
+        }
+        startPlayback(); // Restart playback based on the current mode
     });
 });

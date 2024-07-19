@@ -1,10 +1,10 @@
-body, html {
+body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Light grey background for the body */
+    background-color: #255C99; /* Light grey background for the body */
     display: flex;
     flex-direction: column;
     overflow: hidden; /* Prevent scrolling when blur overlay is active */
@@ -12,14 +12,12 @@ body, html {
 
 header {
     width: 100%;
-    background-color: #4CAF50; /* Green background for the header */
+    background-color: #ECA400; /* Green background for the header */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+    flex-direction: column;
+
 }
 
 .header-container {
@@ -41,7 +39,7 @@ header {
 
 nav {
     width: 100%;
-    background-color: #333; /* Dark background for the nav bar */
+    background-color: #4C212A; /* Dark background for the nav bar */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,19 +55,29 @@ nav {
 }
 
 .nav-button {
-    background-color: #4CAF50; /* Green buttons */
+    background-color: #58A4B0; /* Green buttons */
     color: white;
     border: none;
     padding: 10px 20px;
     margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+    border-radius: 50px; /* Makes the button pill-shaped */
+    font-size: 16px; /* Adjust font size for better readability */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
+/* Optional hover and active states for better interactivity */
 .nav-button:hover {
-    background-color: #45a049; /* Slightly darker green on hover */
-    transform: scale(1.1);
+    background-color: #467F85; /* Darker green for hover effect */
+    transform: scale(1.05); /* Slightly enlarges the button */
 }
+
+.nav-button:active {
+    background-color: #3A686C; /* Even darker green for active effect */
+    transform: scale(0.98); /* Slightly shrinks the button */
+}
+
 
 #blur-overlay {
     position: fixed;
@@ -122,10 +130,6 @@ nav {
     padding: 20px;
 }
 
-.item-2 {
-    text-align: center;
-    opacity: 1;
-}
 
 @media (max-width: 600px) {
     header {
@@ -145,4 +149,84 @@ nav {
     #enter-button {
         font-size: 18px;
     }
+}
+
+
+.toggle-container {
+    display: flex;
+    position: relative;
+    width: 60px;
+    height: 30px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #666;
+}
+
+.toggle-inner {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-inner {
+    transform: translateX(30px);
+}
+
+.toggle-switch {
+    display: none;
+}
+
+.image-flag {
+    
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #4C212A; /* Border around the container */
+    border-radius: 15px; /* Rounds the corners of the border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a drop shadow */
+    padding: 5px; /* Adds padding inside the container */
+    background-color: #58A4B0; /* Background color for the container */
+    max-width: 300px; /* Ensures the container is medium-sized */
+    width: 100%; /* Makes the container responsive */
+    margin: 20px; /* Adds margin around the container */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensures the image scales responsively */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 10px; /* Rounds the corners of the image */
 }
