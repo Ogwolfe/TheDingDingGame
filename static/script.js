@@ -3,13 +3,6 @@ const nav = document.querySelector('nav');
 const modeToggle = document.getElementById('modeToggle');
 const muteButton = document.querySelector('.mute-button');
 
-<<<<<<< HEAD
-    enterButton.addEventListener('click', () => {
-        blurOverlay.classList.add('hidden');
-        
-        document.body.style.overflow = 'auto'; // Enable scrolling
-    });
-=======
 const blurOverlay = document.getElementById('blurOverlay');
 const enterButton = document.getElementById('enterButton');
 
@@ -17,7 +10,6 @@ document.body.classList.add('no-scroll');
 
 menuToggle.addEventListener('click', () => {
     nav.classList.toggle('show');
->>>>>>> 000fb45 (Rehaul)
 });
 
 modeToggle.addEventListener('change', () => {
@@ -51,13 +43,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     const dingFolders = [
         [
-<<<<<<< HEAD
-            'audio/Ding 0/Ding0mamamia.mp3', 'audio/Ding 0/Ding0thisisatoughthing.mp3', 'audio/Ding 0/Ding0youcantdothat.mp3',
-            'audio/Ding 0/Ding0youcanthandlethetruth.mp3', 'audio/Ding 0/Ding0yourenogood.mp3'
-=======
             './static/audio/Ding 0/Ding0mamamia.mp3', './static/audio/Ding 0/Ding0thisisatoughthing.mp3', './static/audio/Ding 0/Ding0youcantdothat.mp3',
             './static/audio/Ding 0/Ding0youcanthandlethetruth.mp3', './static/audio/Ding 0/Ding0yourenogood.mp3'
->>>>>>> 000fb45 (Rehaul)
         ],
         [
             './static/audio/Ding 1/Ding1babysurprise.mp3', './static/audio/Ding 1/Ding1barbieworld.mp3', './static/audio/Ding 1/Ding1beautiful.mp3',
@@ -70,18 +57,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             './static/audio/Ding 2/Ding2thewonderofitall.mp3'
         ],
         [
-<<<<<<< HEAD
-            'audio/Ding 3/Ding3NEWgreatgod.mp3', 'audio/Ding 3/Ding3NEWnobodydoesit.mp3', 'audio/Ding 3/Ding3NEWsuperstar.mp3',
-            'audio/Ding 3/Ding3NEWtheforce.mp3', 'audio/Ding 3/Ding3NEWwhatilike.mp3'
-        ]
-    ];
-
-    const audioPlayer = document.getElementById('audioPlayer');
-    const enterButton = document.getElementById('enter-button');
-    const toggleCheckbox = document.getElementById('toggle');
-
-    let isMusicMode = false;
-=======
             './static/audio/Ding 3/Ding3NEWgreatgod.mp3', './static/audio/Ding 3/Ding3NEWnobodydoesit.mp3', './static/audio/Ding 3/Ding3NEWsuperstar.mp3',
             './static/audio/Ding 3/Ding3NEWtheforce.mp3', './static/audio/Ding 3/Ding3NEWwhatilike.mp3'
         ]
@@ -94,7 +69,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     let isMusicMode = false;
     let isMuted = false;
->>>>>>> 000fb45 (Rehaul)
 
     function getRandomElement(arr) {
         return arr[Math.floor(Math.random() * arr.length)];
@@ -108,15 +82,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (!isMuted) audioPlayer.play();
 
         setTimeout(() => {
-<<<<<<< HEAD
-            if (toggleCheckbox.checked) {
-                playRandomMusic(); // In Music Mode, loop the same random music file
-            } else {
-                playRandomDing(); // In Ding Mode, play a ding sound
-=======
             if (!isMusicMode) {
                 playRandomDing();
->>>>>>> 000fb45 (Rehaul)
             }
         }, randomTime * 1000);
     }
@@ -136,51 +103,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
     function playRandomMusic() {
         const randomFile = getRandomElement(gamemusicFiles);
         audioPlayer.src = randomFile;
-<<<<<<< HEAD
-        audioPlayer.play();
-
-        audioPlayer.onended = () => {
-            if (isMusicMode) {
-                playRandomMusic(); // Continue looping in Music Mode
-=======
         if (!isMuted) audioPlayer.play();
 
         audioPlayer.onended = () => {
             if (isMusicMode) {
                 playRandomMusic();
->>>>>>> 000fb45 (Rehaul)
             }
         };
     }
 
     function startPlayback() {
         if (isMusicMode) {
-<<<<<<< HEAD
-            playRandomMusic(); // Start Music Mode
-        } else {
-            playRandomGamemusic(); // Start Ding Mode
-=======
             playRandomMusic();
         } else {
             playRandomGamemusic();
->>>>>>> 000fb45 (Rehaul)
         }
     }
 
     enterButton.addEventListener('click', () => {
         startPlayback();
-<<<<<<< HEAD
-    });
-
-    toggleCheckbox.addEventListener('change', () => {
-        if (toggleCheckbox.checked) {
-            isMusicMode = true;
-        } else {
-            isMusicMode = false;
-        }
-        startPlayback(); // Restart playback based on the current mode
-=======
->>>>>>> 000fb45 (Rehaul)
     });
 
     modeToggle.addEventListener('change', () => {
