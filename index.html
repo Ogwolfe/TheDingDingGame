@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ding-Ding Game</title>
-  <link rel="stylesheet" href="static/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Responsive Website</title>
+    <link rel="stylesheet" href="./static/styles.css" />
 </head>
-<body>
-    <audio id="audioPlayer"></audio>
+<body class="no-scroll">
 
+<<<<<<< HEAD
     <header>
       <div class="header-container">
         <img src="static/Logo.png" alt="Logo" id="Logo" height="300" width="400">
@@ -46,10 +46,48 @@
 
     <div id="blur-overlay">
       <button id="enter-button">Enter</button>
+=======
+    <div class="blur-overlay" id="blurOverlay">
+        <button class="enter-button" id="enterButton">Enter</button>
+>>>>>>> 000fb45 (Rehaul)
     </div>
 
-    <script src="static/script.js"></script>
+    <header>
+        <a href="#" class="logo">
+            <img src="./static/Logo.png" alt="Logo">
+        </a>
+        <div class="nav-container">
+            <button class="menu-toggle">☰</button>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#order">Order</a>
+                <a href="#contact">Contact</a>
+                <a href="#media">Media</a>
+                <a href="#rules">Rules</a>
+            </nav>
+            <div class="mode-controls">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="modeToggle">
+                    <span class="slider"></span>
+                </label>
+                <button class="mute-button">♪</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="text-section">
+            <h1>Welcome to our website</h1>
+            <p>This is a sample content area. Here you can add your main text content, describing your products, services, or any other information you want to share with your visitors.</p>
+            <p>The sleek and modern design ensures that your content is presented in an attractive and easy-to-read format.</p>
+            <p style="font-size: 60px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, natus iste nulla perspiciatis quae architecto? Optio dignissimos quod consequuntur tempora voluptate! Rerum porro at, facilis cumque in earum suscipit quidem!</p>
+        </section>
+        <section class="image-section">
+            <img src="./static/image000001.JPG" alt="Sample Image 1">
+            
+        </section>
+    </main>
+
+    <script type="text/javascript" src="./static/script.js"></script>
 </body>
 </html>
-
-
