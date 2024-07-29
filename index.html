@@ -6,18 +6,40 @@
     <title>Updated Responsive Website</title>
     <link rel="stylesheet" href="./static/styles.css" />
 </head>
+
 <body class="no-scroll">
 
     <div class="blur-overlay" id="blurOverlay">
         <button class="enter-button" id="enterButton">Enter</button>
     </div>
 
+
+
+
+
+
+    
+
+
     <header>
+
         <a href="#" class="logo">
             <img src="./static/Logo.png" alt="Logo">
         </a>
+
+
         <div class="nav-container">
+
+
+            <div class="score-box">
+                <span class="score-label">Score</span>
+                <div class="score-value"></div>
+            </div>
+
+
             <button class="menu-toggle">☰</button>
+
+
             <nav>
                 <a href="#about">About</a>
                 <a href="#order">Order</a>
@@ -25,6 +47,8 @@
                 <a href="#media">Media</a>
                 <a href="#rules">Rules</a>
             </nav>
+
+
             <div class="mode-controls">
                 <label class="toggle-switch">
                     <input type="checkbox" id="modeToggle">
@@ -32,8 +56,20 @@
                 </label>
                 <button class="mute-button">♪</button>
             </div>
+
         </div>
+
+
     </header>
+
+
+
+
+
+
+
+
+
 
     <main>
         <section class="text-section">
@@ -41,10 +77,78 @@
             <p>This is a sample content area. Here you can add your main text content, describing your products, services, or any other information you want to share with your visitors.</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, natus iste nulla perspiciatis quae architecto? Optio dignissimos quod consequuntur tempora voluptate! Rerum porro at, facilis cumque in earum suscipit quidem!</p>
         </section>
-        <section class="image-section">
-            <img src="./static/image000001.JPG" alt="Sample Image 1">
-            
+
+        <section id="about" class="content-section">
+            <h2>About</h2>
+            <p>Information about your company or project goes here.</p>
         </section>
+    
+        <section id="order" class="content-section">
+            <h2>Order</h2>
+            <p>Details about how to place an order or your products.</p>
+        </section>
+    
+        <section id="contact" class="content-section">
+            <h2>Contact</h2>
+            <p>Contact information and maybe a form can be placed here.</p>
+        </section>
+    
+        <section id="media" class="content-section">
+            <h2>Media</h2>
+            <div class="image-gallery">
+                <img src="./static/image000001.JPG" alt="Sample Image 1">
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+    
+
+
+
+
+
+
+
+
+        <section id="rules" class="content-section">
+            <h2>The Ding-Ding Game Official Rules of Play and Scoring</h2>
+            
+            <p><em>(These are our recommended rules of play, and this is an abbreviated version of the "Official Rules for "The Ding-Ding Game Promotional Tour Challenge." Watch for us in your city! For your particular needs or desires, you may want to alter the scoring, par number, deflector positioning, or any other aspects or rules. Please visit dingdinggame.com for examples of variations of play, other uses, demo videos, and much more.)</em></p>
+            
+            <h3>Before playing The Ding-Ding Game, you will need the following:</h3>
+            <ul>
+                <li>Your fully-charged Ding-A-Ling</li>
+                <li>Putter(s) and various colored golf balls for each player</li>
+                <li>ScoreCard and pen</li>
+            </ul>
+        
+            <ol>
+                <li>Establish and indicate The Line, behind from which players may putt, and power on the Ding-A-Ling and place it on the ground (or floor, if playing indoors) as a target for Hole #1, at a reasonable distance from The Line (30 to 40 feet is normal). Place 2 deflectors at the 10:00 and 2:00 positions behind the Ding-A-Ling. <em>{See diagram}</em></li>
+                
+                <li>Step on the "START" button to activate the game, and set the game audio to a suitable level.</li>
+                
+                <li>Player #1 starts off the game by putting their ball until the ball strikes the Ding-A-Ling, whereupon a Score will be clearly registered (0, 1, 2, or 3 Dings), and that player then adds that Score(Dings) to the difference between par (4) and the number of strokes taken to hit the Ding-A-Ling. So, if a player scores a 2 and takes 3 strokes to do it, then their Points = 2 + 1(par 4 minus 3 strokes) = 3. If a player scores 3 and takes 1 stroke to do it, then their Points = 3 + 3(par 4 minus 1 stroke) = 6. Any player who registers a 0 on the Ding-A-Ling receives an automatic Points total of 0, regardless of the number of strokes it takes. Also, no matter how many strokes a player takes on a Hole, their Points cannot total less than 0 (there is no negative scoring). <em>(Examples of every scoring possibility are represented in the chart accompanying the diagram.)</em></li>
+                
+                <li>Player #2 then plays until they strike the Ding-A-Ling and count their Dings and strokes to calculate their points, and subsequent players play out separately until each player has entered their Points on the ScoreCard, and the Current Score is updated, and the Hole is completed.</li>
+                
+                <li>The Ding-A-Ling and the deflectors are repositioned for the next Hole, or else the game remains as it is and all players return to The Line again to continue play and start the next Hole. If the Ding-A-Ling is moved for each Hole, then players should alternate who places the Ding-A-Ling.</li>
+                
+                <li>Players must alternate starting each Hole, and taking turns playing the Hole, in the order in which they appear on the ScoreCard. So, on Hole #2, Player #2 starts off, followed by #3 and #4 and finishing with Player #1, and so on for subsequent Holes.</li>
+                
+                <li>After 8 Holes, the player with the highest Final Points is declared the winner, as long as their Final Points total is 2 points or more above any other player's Final Points. If players remain within 2 Points, then those players must continue playing Extra Holes until one player's Points total is 2 points or more above all others.</li>
+            </ol>
+        
+            <h3>Notes:</h3>
+            <ul>
+                <li>If a player hits their ball out of bounds (established previously), then they are entitled to position their ball back within the field of play within one club-length from where the ball went out of bounds, and then they may proceed with no penalty.</li>
+                <li>If a ball rests against a deflector or any other object, precluding a player from putting the ball, then that player is entitled to move the ball one putter-length (about 4") from the object, and they may proceed playing with no penalty.</li>
+            </ul>
+        </section>
+
+
+
+
+
+
     </main>
 
     <script type="text/javascript" src="./static/script.js"></script>
